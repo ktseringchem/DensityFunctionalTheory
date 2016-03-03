@@ -1,0 +1,50 @@
+.nav a {
+    color: #5a5a5a;
+    font-size: 11px;
+    font-weight: bold;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-transform: uppercase;
+	Display: inline;
+}
+.nav li {
+	display: inline;
+}
+
+.jumbotron {
+	height: 500px;
+	background-image: url(tibet_by_hardyguardy.jpg);
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.jumbotron p {
+	color: #fff;
+	font-size: 20px;
+}
+
+.jumbotron h1 {
+    color: #FE642E;
+	text-align: left;
+	font-size: 48px;
+	font-family: 'Shift', sans-serif;
+	font-weight: bold;
+}
+.learn-more {
+    background-color:#D5D8DA;
+}
+.learn-more h3 {
+    font-family: ‘Courier New’, Courier, monospace;
+    font-size:18px;
+}
+.learn-more a {
+    color:#00b0ff;
+}
+.container div{
+  text-align: justify;
+  font-size: 20px;
+  font-family: Nimbus san L;
+  text-indent: 80px;
+}

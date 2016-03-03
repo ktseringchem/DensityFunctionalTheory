@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+		<link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+		<link href="main.css" rel="stylesheet">
+	</head>
+	<body>
+	<div class="container">
+		<h2 align="middle">Roles of Ammonia in Homogeneous Nucleation Initiated by Sulfuric Acid and Oxalic Acid</h2>
+		<div class="row">
+			<div class="col-md-12">In the early twentieth century, physicists found that classical mechanics does not correctly
+				describe the behavior of very small particles such as the electrons and nuclei of atoms and  molecules. When one
+				or more dimensions at a material fall below 100nm (and especially below 20nm) dramatic changes in the optical,
+				electronic, chemical,and other properties from those of the bulk material can occur. Quantume mechanics  (QM),
+				a set of laws governing the subatomic world, was developed after the experimental observations such as blackbody
+				radiation, photoelectric effect, double slit experiment, particles scattering off a crystal, Stern-Gerlach experiment,
+				development of Bohr and deBroglie model and formulation of Maxwell's equations. Theoretical chemistry is defined as
+				mathematical description of chemistry and when the mathematical method is sufficiently developed to be automated for
+				implementation on a computer then it is referred to as computational chemistry. [Brief history leading to computational
+				chemistry] Increase in the use of computational chemistry is due to development of easy to use software and advances in
+				capability of hardware. Calculations can be performed without knowing the underlying principle; never the less subsequent
+				paragraphs are an attempt to clarify the theoretical background of the methods used in the research. As a chemist we would
+				like to describe the properties of well-defined collection of atoms. The goal is to find the energy of the system, one of
+				the most useful concepts in science, and more importantly how the energy changes base on the orientation of the individual
+				atoms. To achieve these goals the position of atom’s nucleus and electrons are defined in order to calculate the energy based
+				on their interaction.</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">Schrödinger’s formulation of the Quantum mechanics is the basis for nearly all computational chemistry methods.
+				The Schrödinger equation is Where  is the Hamiltonian operator, Ψ is a set of solutions, or a eigenstate, describing the state of the
+				system. For Ψ to be a wavefunction describing a state of a particle, it has to be a single valued, continuous and differentiable, finite
+				and normalized. When operate  operates on the eigenfunction Ψ, an eigenvalue E and the same eigenfunction is returned, where E is the
+				energy of the system and  is the energy operator. The total energy is the sum of kinetic and potential energy therefore quantum mechanical
+				expression of the Hamiltonian operator  for molecule with n-electrons is
+				The symbols α and β refer to nuclei and i and j refer to electrons. The first term gives kinetic energy of the nuclei. The second term is
+				kinetic energy of the electrons. The third term is the potential energy due to repulsion between the nuclei with distance of r<sub>αβ</sub> between α
+				and β nuclei and atomic number of Z<sub>α</sub> and Z<sub>β</sub>. The fourth term is potential energy due to Caulomic attraction between the nuclei and the electrons.
+				The fifth term is potential energy due to repulsion between the electrons i and j with distance rij. The restriction i>j and α>β is to not count
+				repulsion terms twice. This formulation is the time-independent, nonrelativistic Schrödinger equation. There are additional terms in Hamiltonian
+				when relativity or interactions with electromagnetic radiation or fields are taken into account. Due to the complexity of the above equation, it
+				is almost never used in currently available software. In order to obtain a physically relevant solution of the Schrödinger equation, the wave
+				function must be continuous, single-valued, normalizable, and antisymmetric with respect to the interchange of electrons. The experimentally
+				observable quantity is the probability density |Ψ(x,y,z,t)|2, where the value does not change with time, therefore square of time-dependent
+				wavefunction, |Ψ(x,y,z,t)|2, is equal to the square of the time-independent wavefunction . The square of the time-independent wavefunction is
+				referred to as stationary state; because the probability density  is stationary not the particles. Once a wave function is constructed, any property
+				of the individual molecules can be determined, by using operator for that property. This is accomplished by taking the expectation value of the
+				operation given by
+				Where ψ* is the complex conjugate wavefucntion. For exact wave function this will predict the exact energy given by Schrödinger equation. For an
+				approximate wave function, this gives an approximation of the energy, which is the basis for many of the techniques described in rest of the chapter
+				and utilized in this research. The Schrödinger equation involves 3N independent variables, three coordinates for N electrons. The potential energy
+				term, due to electron repulsion is not separable in any coordinate system. The perturbation method separates the Hamiltonian, Ĥ, into two parts, the
+				unperturbed Ĥ0, and the perturbation Ĥ'. When the electron-electron interaction is taken as the perturbation and put it aside, the many-electron
+				problem is simplified greatly. This assumption allows the separation of the Hamiltonian and the total electronic wavefunction Ψn into the motion of N
+				individual non-interacting electrons. The system would be product of N hydrogenlike, one-electorn, wavefunctions (orbitals), Ψ0 = ϕ1(r1)ϕ2(r2 )…ϕn(rn),
+				where Ψ0 is zeroth-order wavefunction meaning no perturbation is included. This product of single electron wavefunctions is known as Hartree Product.
+				If we are interested in single molecule of water, ignoring the nuclei coordinates  because there are lot more electrons than nuclei in large systems,
+				the full spin-less wavefuntion is 20-dimentional function (3 dimensions for each of the 10 electrons), for sulfuric acid 100-dimentional and for a quaternary
+				(H2SO4-NH3-H2C2O4-H2O) aerosol cluster 1,188 dimensions. It can be seen from these numbers the cost of trying to solve the Schrödinger equation. The
+				situation gets worst when we include the perturbation electron-electron interaction because assuming electrons don’t interact with each other is a serious
+				approximation. When the columbic interaction is ignored, effects born out of those interactions such as the shielding effects are also excluded, in other words,
+				the Schrödinger equation is a many body problem. Over the course of computational chemistry’s existence, in attempts to solve the Schrödinger equation,
+				scientists have developed many approximation methods, such as perturbation, variation, Hartree-Fock Self-consistent-Field (HF-SCF) and density functional
+				method (DFT). The above Hamiltonian operator can be simplified by separating the nuclear and electron motions. Born-Oppenheimer approximation, a mathematical
+				trick, assumes that relative to the electrons, nucleus is stationary because the nucleus is 1800 times the mass of an electron. The physical significance
+				of this observation results in elections responding much more quickly than nuclei to any changes to their surroundings, resulting in simpler Hamiltonian
+				operator
+				This assumption simplifies the Hamiltonian operator by removing the kinetic energy term and making internuclear repulsion potential energy (VNN) term a
+				constant. This constant is added to the purely electronic energy after solving the electronic Schrödinger equation. Born-Oppenheimer approximation, perturbation
+				and variation methods greatly simplified the problem but we still need to content with exponential growth in dimensional of the function depending on the
+				size of the system. This prompted a search for function with fewer variables than the wavefunction. All information is in wavefunction according to QM but
+				density |ψ|2 has as much information as wavefunctions and |ψ|2 need to be solved in order to get any useful information. The first theorem of Hohenberg and
+				Kohn proves the existence of a ground state electron probability density ρ(x,y,z) that uniquely determines for molecules with a nondegenerate ground state,
+				the ground-state molecular energy, wavefunction, and all other molecular electronic properties. The following is the proof of Hohenberg-Kohn theorem. The purely
+				electronic energy Hamiltonian (above), after applying the Born-Oppenheimer approximation, is the sum of electronic kinetic-energy terms, electron-nuclear
+				attractions, and electron-electron repulsions. Atomic units are employed here on, unless otherwise specified. Theoreticians, and thus software developers,
+				work with a system of units called atomic units, where many of the fundamental constants are defined as having a value of 1. Only in the second term does
+				the position of the nuclei needs to be defined. This is also where type of problem is defined, for example water molecule or body-centered cubic (bcc) iron,
+				by the fixed positions of the nuclei. In the context of the DFT this potential is referred to as the external potential, external because the coulomb potential
+				produced by the nuclei in which the system of electrons move. Once the external potential υ(ri) and the number of electron N is determined, the electronic
+				Schrödinger equation can be solved and electronic wavefunction and allowed energies of the molecule can be determined. The Hohenberg-Kohn proved for system
+				with nondegenerate ground-state electron, the ground-state electron probability density ρ0(r) (the zero subscript indicates the ground state) determines the
+				external potential and the number of electrons. The probability density ρ for finding an electron at point (x, y, z) and in volume dx, dy, dz is
+				Where r and ms are spaceal and spin coordinates. If we integrate the above equation over all space and use the normalization of ψ to get, to determines the
+				number of electron. Normally, once we know the external potential we can get the electronic wavefunction that is the set of solution to the Schrödinger equation
+				for that particular external potential, and therefore the set of densities that corresponds to that particular wavefunction. There arises a possibility of a
+				wavefunction that is set of solutions to the Schrödinger equation for two different systems, for two different external potentials. This possibility implies
+				that there are two systems (i.e. two solids) that by no experimental means can be distinguish from each other. Which is not possible, if that situation happens;
+				the two are the same (i.e. same solids), therefore there exists a unique wavefunction for a given external potential. A second possibility to consider is given
+				two different wavefunctions a same density can be calculated, which is also not true. To prove the second possibility, if Ψ ≠ Ψ’, then ρ ≠ ρ’, assume Ψ ≠ Ψ’
+				and ρ = ρ’, which should lead to a contradiction. Ψ is the ground state of a Hamiltonian H with ground state energy Egs and Ψ’ is the ground state of a
+				Hamiltonian H’ with ground state energy is E’gs. For same number of electrons, otherwise inconsequential result, the terms of the individual Hamiltonians are
+				H = T + W + V and H’ = T + W + V’. The two Hamiltonians differ only in their external potentials V and V’ so first Hamiltonian can be written as H = H’ - V’
+				+ V and vice versa. According to the variation theorem, use of any normalized well-behaved function that differs from the ground-state wavefunction will make
+				the variational integral greater than E0. Therefore using the two wavefunctions interchangeable with a given Hamiltonians provides the following inequalities
+				and Since ρ = ρ’, adding the two inequalities, the two integrals cancel and the result is . This is a contradictory result of assuming ρ = ρ’ when Ψ ≠ Ψ’ [P.
+				Hohenberg and W. Kohn, Phys. Rev. 136B (1964) 864]. The external potential υ(ri) is a injective function of the wavefunction, meaning external potential can
+				be uniquely connected to a wavefunction  and in turn a wavefunction is a injective function of the probability density, meaning a wavefunction can be uniquely
+				connected to a probability density. Consequently, any observable ground state property of the many-electron system can be written as a unique functional of the
+				density. There is a one-to-one correspondence between the ground state density of a many-electron system and the external potential.
+				Each of the expectation value in this equation is a molecular property determined by the ground-state electronic wavefunction, which is determined by ρ0(x,y,z).
+				Therefore, each term is a function of ρ0:
+				Square brackets denote a functional relation and υ subscript emphasizes the dependence of E0 is on the external potential υ(r), which is unique for each molecule.
+				To appreciate this result, understanding of functional is needed, without going into too much mathematical detail. A function space is a space made of functions
+				and each function in the space can be thought of as a point, so a functional F(f) is a rule that associates a number (point in space) with each function f. A
+				functional maps function onto a number, real or complex. The density function is much simpler than the wavefunction, the wavefunction has 3N dimension to keep
+				track of but density function has only three dimensions, no matter how many electrons in the system. Hohenberg and Kohn’s result can be restated as the ground-state
+				energy E0 is functional of density ρ0 and can be express as E0 = E0[ρ0]. This is why this field is known as density functional theory.
+				The Hohenberg-Kohn variation theorem states that for every trial density function ρtr(r) that satisfies ∫ ρtr(r) dr = n and ρtr(r) ≥ 0 for all r, the following
+				inequality holds: E0 ≤ Ev[ρtr]. The variation theorem allows us to calculate an upper bound for the system’s ground-state energy using the trial electron probability
+				density, similar to trial wavefunction, when variational integral is taken. The lowest energy is the ground state, no matter which trial function is applied, the
+				eigenvalue cannot be lower than the ground-state energy so it’s a matter of coming up with a better guess for the electron probability density function and that
+				will lead closer to the true ground-state energy. </div>
+		</div>
+	</div>
+
+	</body>
+</html>
