@@ -48,3 +48,6 @@
   font-family: Nimbus san L;
   text-indent: 80px;
 }
+div span{
+  display: block;
+}
