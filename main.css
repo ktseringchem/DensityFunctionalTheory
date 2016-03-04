@@ -65,3 +65,13 @@ div span{
   background-color: yellow;
   text-align: center;
 }
+#equations{
+  text-align: center;
+  font-size: 35px;
+}
+#inlineequation{
+  text-align: inherit;
+}
+#bigequations{
+  font-size: 20px;
+}

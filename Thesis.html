@@ -3,6 +3,8 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="utf-8">
+		<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML"></script>
+		<script src="ASCIIMathML.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		<link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
@@ -145,12 +147,16 @@
 									atoms. To achieve these goals the position of atom’s nucleus and electrons are defined in order to calculate the energy based
 									on their interaction.</p>
 									<p>Schrödinger’s formulation of the Quantum mechanics is the basis for nearly all computational chemistry methods.
-										The Schrödinger equation is Where  is the Hamiltonian operator, Ψ is a set of solutions, or a eigenstate, describing the state of the
-										system. For Ψ to be a wavefunction describing a state of a particle, it has to be a single valued, continuous and differentiable, finite
-										and normalized. When operate  operates on the eigenfunction Ψ, an eigenvalue E and the same eigenfunction is returned, where E is the
-									energy of the system and  is the energy operator. The total energy is the sum of kinetic and potential energy therefore quantum mechanical
-									expression of the Hamiltonian operator  for molecule with n-electrons is
-									The symbols α and β refer to nuclei and i and j refer to electrons. The first term gives kinetic energy of the nuclei. The second term is
+										The Schrödinger equation is</p>
+									<div class="col-md-12" id="equations"> <math xmlns="http://www.w3.org/1998/Math/MathML"><mover><mi>&#x00397;</mi><mo>^</mo></mover><mi>&#x003A8;</mi><mo>=</mo><mi>&#x00395;</mi><mi>&#x003A8;</mi></math> </div>
+									<p>Where <math xmlns="http://www.w3.org/1998/Math/MathML"><mover><mi mathvariant="normal">&#x00397;</mi><mo>^</mo></mover></math> is the Hamiltonian operator,
+									<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>&#x003A8;</mi></math> is a set of solutions, or a eigenstate, describing the state of the
+										system. For <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>&#x003A8;</mi></math> to be a wavefunction describing a state of a particle, it has to be a single valued, continuous and differentiable, finite
+										and normalized. When operater <math xmlns="http://www.w3.org/1998/Math/MathML"><mover><mi mathvariant="normal">&#x00397;</mi><mo>^</mo></mover></math> operates on the eigenfunction <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>&#x003A8;</mi></math>, an eigenvalue E and the same eigenfunction is returned, where E is the
+									energy of the system and  <math xmlns="http://www.w3.org/1998/Math/MathML"><mover><mi mathvariant="normal">&#x00397;</mi><mo>^</mo></mover></math> is the energy operator. The total energy is the sum of kinetic and potential energy therefore quantum mechanical
+									expression of the Hamiltonian operator <math xmlns="http://www.w3.org/1998/Math/MathML"><mover><mi mathvariant="normal">&#x00397;</mi><mo>^</mo></mover></math> for molecule with n-electrons is</p>
+									<div class="col-md-12" id="bigequations"><math xmlns="http://www.w3.org/1998/Math/MathML"><mover><mi>&#x00397;</mi><mo>^</mo></mover><mo>=</mo><mo>-</mo><mfrac><msup><mi>&#x0210F;</mi><mn>2</mn></msup><mn>2</mn></mfrac><munder><mo>&#x02211;</mo><mi>&#x003B1;</mi></munder><mfrac><mn>1</mn><msub><mi>m</mi><mi>&#x003B1;</mi></msub></mfrac><msubsup><mo>&#x02207;</mo><mi>&#x003B1;</mi><mn>2</mn></msubsup><mo>-</mo><mfrac><msup><mi>&#x0210F;</mi><mn>2</mn></msup><mrow><mn>2</mn><msub><mi>m</mi><mi>e</mi></msub></mrow></mfrac><munder><mo>&#x02211;</mo><mi>i</mi></munder><msubsup><mo>&#x02207;</mo><mi>i</mi><mn>2</mn></msubsup><mo>+</mo><munder><mo>&#x02211;</mo><mi>&#x003B1;</mi></munder><munder><mo>&#x02211;</mo><mrow><mi>&#x003B2;</mi><mo>&gt;</mo><mi>&#x003B1;</mi></mrow></munder><mfrac><mrow><msub><mi>Z</mi><mi>&#x003B1;</mi></msub><msub><mi>Z</mi><mi>&#x003B2;</mi></msub><msup><mi>e</mi><mn>2</mn></msup></mrow><mrow><mn>4</mn><msub><mi>&#x003C0;&#x003B5;</mi><mn>0</mn></msub><msub><mi mathvariant="normal">r</mi><mi>&#x003B1;&#x003B2;</mi></msub></mrow></mfrac><mo>-</mo><munder><mo>&#x02211;</mo><mi>&#x003B1;</mi></munder><munder><mo>&#x02211;</mo><mi>i</mi></munder><mfrac><mrow><msub><mi>Z</mi><mi>&#x003B1;</mi></msub><msup><mi>e</mi><mn>2</mn></msup></mrow><mrow><mn>4</mn><mi>&#x003C0;</mi><msub><mi>&#x003B5;</mi><mn>0</mn></msub><msub><mi mathvariant="normal">r</mi><mrow><mi>i</mi><mi>&#x003B2;</mi></mrow></msub></mrow></mfrac><mo>+</mo><munder><mo>&#x02211;</mo><mi>j</mi></munder><munder><mo>&#x02211;</mo><mrow><mi>i</mi><mo>&gt;</mo><mi>j</mi></mrow></munder><mfrac><msup><mi>e</mi><mn>2</mn></msup><mrow><mn>4</mn><mi>&#x003C0;</mi><msub><mi>&#x003B5;</mi><mn>0</mn></msub><msub><mi mathvariant="normal">r</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow></mfrac></math></div>
+									<p>The symbols α and β refer to nuclei and i and j refer to electrons. The first term gives kinetic energy of the nuclei. The second term is
 									kinetic energy of the electrons. The third term is the potential energy due to repulsion between the nuclei with distance of r<sub>αβ</sub> between α
 									and β nuclei and atomic number of Z<sub>α</sub> and Z<sub>β</sub>. The fourth term is potential energy due to Caulomic attraction between the nuclei and the electrons.
 									The fifth term is potential energy due to repulsion between the electrons i and j with distance rij. The restriction i>j and α>β is to not count
