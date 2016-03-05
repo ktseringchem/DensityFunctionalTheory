@@ -72,7 +72,7 @@ div span{
 #inlineequation{
   text-align: inherit;
 }
-#bigequations p{
-  font-size: 32px;
+#bigequations math{
+  font-size: 80px;
   text-align: center;
 }
