@@ -3,7 +3,33 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="utf-8">
-		<script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+		<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+    <script>
+        MathJax.Hub.Config({
+            config: ["MMLorHTML.js"],
+            extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js"],
+            jax: ["input/TeX"],
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                processEscapes: false
+            },
+            TeX: {
+                TagSide: "right",
+                TagIndent: ".8em",
+                MultLineWidth: "85%",
+                equationNumbers: {
+                   autoNumber: "AMS",
+                },
+                unicode: {
+                   fonts: "STIXGeneral,'Arial Unicode MS'"
+                }
+            },
+            showProcessingMessages: false
+        });
+    </script>
+		<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script>
+		<!--<script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		<link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
@@ -144,10 +170,10 @@
 									<p>As a chemist we would like to describe the properties of well-defined collection of atoms. The goal is to find the energy of the system, one of
 									the most useful concepts in science, and more importantly how the energy changes base on the orientation of the individual
 									atoms. To achieve these goals the position of atom’s nucleus and electrons are defined in order to calculate the energy based
-									on their interaction.</p>
+									on their interaction. $y = \alpha$ </p>
 									<p>Schrödinger’s formulation of the Quantum mechanics is the basis for nearly all computational chemistry methods.
 										The Schrödinger equation is </P>
-										<math class="equations" xmlns="http://www.w3.org/1998/Math/MathML">
+										<math class="equations" xmlns="http://www.w3.org/1998/Math/MathML" display="block">
 											<mover>
 												<mi>&#x00397;
 												</mi>
@@ -158,10 +184,21 @@
 											<mi>&#x00395;</mi>
 											<mi>&#x003A8;</mi>
 										</math>
-									<p>Where <math id="QMequations" xmlns="http://www.w3.org/1998/Math/MathML" ><mover><mi mathvariant="normal">&#x00397;</mi><mo>^</mo></mover></math>
+									<p>Where
+										<math id="QMequations" xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+											<mover>
+												<mi mathvariant="normal">&#x00397;</mi>
+												<mo>^</mo>
+											</mover>
+										</math>
 										is the Hamiltonian operator,
-									<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>&#x003A8;</mi></math> is a set of solutions, or a eigenstate, describing the state of the
-										system. For <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>&#x003A8;</mi></math> to be a wavefunction describing a state of a particle, it has
+										<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+											<mi>&#x003A8;</mi>
+										</math> is a set of solutions, or a eigenstate, describing the state of the
+										system. For
+										<math xmlns="http://www.w3.org/1998/Math/MathML">
+											<mi>&#x003A8;</mi>
+										</math> to be a wavefunction describing a state of a particle, it has
 										to be a single valued, continuous and differentiable, finite
 										and normalized. When operater <math xmlns="http://www.w3.org/1998/Math/MathML"><mover><mi mathvariant="normal">&#x00397;</mi><mo>^</mo></mover></math>
 										operates on the eigenfunction <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>&#x003A8;</mi></math>, an eigenvalue E and the same eigenfunction is
