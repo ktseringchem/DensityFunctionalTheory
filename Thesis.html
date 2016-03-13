@@ -1,40 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta charset="utf-8">
-		<!--<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>-->
-		<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script>
-    <script>
-        MathJax.Hub.Config({
-            config: ["MMLorHTML.js"],
-            extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js"],
-            jax: ["input/TeX"],
-            tex2jax: {
-                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-                displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-                processEscapes: false
-            },
-            TeX: {
-                TagSide: "right",
-                TagIndent: ".8em",
-                MultLineWidth: "85%",
-                equationNumbers: {
-                   autoNumber: "AMS",
-                },
-                unicode: {
-                   fonts: "STIXGeneral,'Arial Unicode MS'"
-                }
-            },
-            showProcessingMessages: false
-        });
-    </script>
-		<!--<script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>-->
+		<!--MathJax link-->
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+  			tex2jax: {
+			    inlineMath: [['$','$'], ['\\(','\\)']],
+			    displayMath: [['$$','$$'], ['\[','\]']],
+			    processEscapes: true,
+			    processEnvironments: true,
+			    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+			    TeX: { equationNumbers: { autoNumber: "AMS" },
+			         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+			  }
+			});
+		</script>
+		<script type="text/x-mathjax-config">
+		  MathJax.Hub.Queue(function() {
+		    // Fix <code> tags after MathJax finishes running. This is a
+		    // hack to overcome a shortcoming of Markdown. Discussion at
+		    // https://github.com/mojombo/jekyll/issues/199
+		    var all = MathJax.Hub.getAllJax(), i;
+		    for(i = 0; i < all.length; i += 1) {
+		        all[i].SourceElement().parentNode.className += ' has-jax';
+		    }
+			});
+		</script>
+		<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+		<!--Content Delivery Network link for CSS, javascript and jQuery links-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		<link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
 		<link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+		<!-- This for the CSS page link-->
 		<link href="main.css" rel="stylesheet">
+		<title>MyThesisPage</title>
 	</head>
 	<body>
 
@@ -153,8 +152,8 @@
 
 				<div id="Chapter2" class="tab-pane fade in active">
 					<h3 align="middle">CHAPTER II</h3>
-						<div class="row">
-							<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-12">
 								<p>In the early twentieth century, physicists found that classical mechanics does not correctly
 									describe the behavior of very small particles such as the electrons and nuclei of atoms and  molecules. When one
 									or more dimensions at a material fall below 100nm (and especially below 20nm) dramatic changes in the optical,
@@ -163,17 +162,17 @@
 									radiation, photoelectric effect, double slit experiment, particles scattering off a crystal, Stern-Gerlach experiment,
 									development of Bohr and deBroglie model and formulation of Maxwell's equations.</p>
 									<p>Theoretical chemistry is defined as mathematical description of chemistry and when the mathematical method is sufficiently developed to be automated for
-									implementation on a computer then it is referred to as computational chemistry. [Brief history leading to computational
-									chemistry] Increase in the use of computational chemistry is due to development of easy to use software and advances in
+									implementation on a computer then it is referred to as computational chemistry. (Brief history leading to computational
+									chemistry) Increase in the use of computational chemistry is due to development of easy to use software and advances in
 									capability of hardware. Calculations can be performed without knowing the underlying principle; never the less subsequent
 									paragraphs are an attempt to clarify the theoretical background of the methods used in the research.</p>
 									<p>As a chemist we would like to describe the properties of well-defined collection of atoms. The goal is to find the energy of the system, one of
 									the most useful concepts in science, and more importantly how the energy changes base on the orientation of the individual
 									atoms. To achieve these goals the position of atom’s nucleus and electrons are defined in order to calculate the energy based
-									on their interaction \(y = \alpha\).</p>
+									on their interaction $y = \alpha$ \(y = \alpha \) .</p>
 									<p>Schrödinger’s formulation of the Quantum mechanics is the basis for nearly all computational chemistry methods.
 										The Schrödinger equation is </P>
-										<math class="equations" xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+										<math class="equations" xmlns="http://www.w3.org/1998/Math/MathML" style="display:block">
 											<mover>
 												<mi>&#x00397;
 												</mi>
@@ -304,8 +303,8 @@
 									density, similar to trial wavefunction, when variational integral is taken. The lowest energy is the ground state, no matter which trial function is applied, the
 									eigenvalue cannot be lower than the ground-state energy so it’s a matter of coming up with a better guess for the electron probability density function and that
 									will lead closer to the true ground-state energy.</p>
-							</div>
 						</div>
+					</div>
 				</div>
 
 				<div id="Chapter3" class="tab-pane fade in active">
