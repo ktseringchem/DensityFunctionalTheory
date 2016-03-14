@@ -20,7 +20,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
   <link href="StylThesis.css" rel="stylesheet">
-  <title>tryout of MathJax</title>
+  <title>Thesis: Density Functional Theory</title>
 </head>
 <body>
 
@@ -164,23 +164,24 @@
                 energy is the sum of kinetic and potential energy therefore quantum mechanical expression of the Hamiltonian operator $\hat{H}$ for
                 molecule with n-electrons is $$\hat{H} = \frac{\hbar^2}{2}\sum_{\alpha}\frac{1}{m_{\alpha}}\nabla_{\alpha}^{2}+\frac{\hbar^2}{2m_{e}}\sum_{i}
                 \nabla_{i}^{2}+\sum_{\alpha}\sum_{\beta>\alpha}\frac{Z_{\alpha}Z_{\beta}e^{2}}{4\pi\varepsilon_{0}r_{ij}}+\sum_{\alpha}\sum_{i}\frac{Z_{\alpha}e^{2}}
-                {4\pi\varepsilon_{0}r_{i\alpha}}+\sum_{j}\sum_{i>j}\frac{e^{2}}{4\pi\varepsilon_{0}r_{ij}}$$</p>
+                {4\pi\varepsilon_{0}r_{i\alpha}}+\sum_{j}\sum_{i>j}\frac{e^{2}}{4\pi\varepsilon_{0}r_{ij}}$$ $$\text{The Laplacia}\qquad\nabla_{i}^{2}=\frac{d^2}{dx_i^2}+
+                \frac{d^2}{dy_i^2}+\frac{d^2}{dz_i^2}$$</p>
 
-              <p>The symbols α and β refer to nuclei and i and j refer to electrons. The first term gives kinetic energy of the nuclei. The second term is
-              kinetic energy of the electrons. The third term is the potential energy due to repulsion between the nuclei with distance of r<sub>αβ</sub> between α
-              and β nuclei and atomic number of Z<sub>α</sub> and Z<sub>β</sub>. The fourth term is potential energy due to Caulomic attraction between the nuclei and the electrons.
-              The fifth term is potential energy due to repulsion between the electrons i and j with distance rij. The restriction i>j and α>β is to not count
+              <p>The symbols $\alpha$ and $\beta$ refer to nuclei and $i$ and $j$ refer to electrons. The first term gives kinetic energy of the nuclei. The second term is
+              kinetic energy of the electrons. The third term is the potential energy due to repulsion between the nuclei with distance of $r_{αβ}$ between $\alpha$
+              and $\beta$ nuclei and atomic number of $Z_{\alpha}$ and $Z_{\beta}$. The fourth term is potential energy due to Caulomic attraction between the nuclei and the electrons.
+              The fifth term is potential energy due to repulsion between the electrons $i$ and $j$ with distance $r_{ij}$. The restriction $i>j$ and $α>β$ is to not count
               repulsion terms twice. This formulation is the time-independent, nonrelativistic Schrödinger equation. There are additional terms in Hamiltonian
               when relativity or interactions with electromagnetic radiation or fields are taken into account. Due to the complexity of the above equation, it
               is almost never used in currently available software.</p>
               <p>In order to obtain a physically relevant solution of the Schrödinger equation, the wave
               function must be continuous, single-valued, normalizable, and antisymmetric with respect to the interchange of electrons. The experimentally
-              observable quantity is the probability density |Ψ(x,y,z,t)|2, where the value does not change with time, therefore square of time-dependent
-              wavefunction, |Ψ(x,y,z,t)|2, is equal to the square of the time-independent wavefunction . The square of the time-independent wavefunction is
+              observable quantity is the probability density $|Ψ(x,y,z,t)|^2$, where the value does not change with time, therefore square of time-dependent
+              wavefunction, $|Ψ(x,y,z,t)|^2$, is equal to the square of the time-independent wavefunction $|\psi{(x,y,z,t)}|^2$. The square of the time-independent wavefunction is
               referred to as stationary state; because the probability density  is stationary not the particles. Once a wave function is constructed, any property
               of the individual molecules can be determined, by using operator for that property. This is accomplished by taking the expectation value of the
-              operation given by
-              Where ψ* is the complex conjugate wavefucntion. For exact wave function this will predict the exact energy given by Schrödinger equation. For an
+              operation given by $$\langle E \rangle = \int{\psi^*\hat{H}\psi}=\langle\psi\hat{H}\psi\rangle$$
+              Where $ψ*$ is the complex conjugate wavefucntion. For exact wave function this will predict the exact energy given by Schrödinger equation. For an
               approximate wave function, this gives an approximation of the energy, which is the basis for many of the techniques described in rest of the chapter
               and utilized in this research.</p>
               <p>The Schrödinger equation involves 3N independent variables, three coordinates for N electrons. The potential energy
