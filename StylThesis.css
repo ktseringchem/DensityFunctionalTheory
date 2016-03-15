@@ -23,3 +23,26 @@
   height: 500px;
   width: auto;
 }
+.container .RoadTrip {
+  border-bottom-style: solid;
+  border-color: black;
+  text-align: left;
+  font-family: lobster regular;
+  font-size: 26px;
+}
+.container .destination {
+  border-bottom-style: solid;
+  border-color: #D8D8D8;
+  text-align: left;
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
+}
+.container .rowNumb {
+  font-family: sans-serif;
+}
+.container .page-header {
+  height: 200px;
+  background-size: 1400px 200px;
+  font-size: 60px;
+  font-family: 'Griffy', cursive;
+}
