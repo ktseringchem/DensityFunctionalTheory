@@ -5,7 +5,7 @@
 }
 .container div p{
   font-size:20px;
-  font-family: Nimbus san L;
+  font-family: NIMBUS SANS L BOLDCONDITAL;
   text-align: justify;
   text-indent: 60px;
   line-height: 1.5;
@@ -21,7 +21,7 @@
 }
 .jumbotron {
   height: 500px;
-  width: auto;
+  width: 100%;
 }
 .container .RoadTrip {
   border-bottom-style: solid;
@@ -35,7 +35,7 @@
   border-color: #D8D8D8;
   text-align: left;
   font-family: 'Indie Flower', cursive;
-  font-size: 20px;
+  font-size: 22px;
 }
 .container .rowNumb {
   font-family: sans-serif;
@@ -45,4 +45,5 @@
   background-size: 1400px 200px;
   font-size: 60px;
   font-family: 'Griffy', cursive;
+  text-align: center;
 }
