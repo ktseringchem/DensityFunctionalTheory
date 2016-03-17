@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
   <head>
 
      <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
@@ -17,96 +18,101 @@
      <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>-->
      <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
      <link href="StylThesis.css" rel="stylesheet">
+     <script src="roadTripScript.js"></script>
 
   </head>
 
-  <body>
+    <body>
 
-    <div id="fb-root"></div>
-    <script>
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
-
-    <br>
-    <div class="jumbotron" id="map"></div>
-    <script src="roadTripScript.js"></script>
-
-    <div class="container">
+      <div id="fb-root"></div>
+      <script>
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+      </script>
 
       <div class="row">
         <div class="page-header" style="background-image:url('Momonga Banner Backdrop.png')">It's Adventure Time</div>
       </div>
 
-      <div class="row RoadTrip">
-        <div class="col-md-1 rowNumb"></div>
-        <div class="col-md-3">Destination</div>
-        <div class="col-md-4">Activity</div>
-        <div class="col-md-2">Duration</div>
-        <div class="col-md-2">Camp Site</div>
-      </div>
-
       <br>
 
-      <div class="row destination">
-        <div class="col-md-1 rowNumb">1.</div>
-        <div class="col-md-3">Joshua Tree Visitor Center <br>6554 Park Boulevard <br> Joshua Tree, CA 92256</div>
-        <div class="col-md-4">National Park Passport <br> Nature walk and climbing rocks</div>
-        <div class="col-md-2">few hours</div>
-        <div class="col-md-2"></div>
-      </div>
+      <div class="container">
 
-      <br>
+        <div class="jumbotron"></div>
 
-      <div class="row destination">
-        <div class="col-md-1 rowNumb">2.</div>
-        <div class="col-md-3">Channel Islands National Park <br> 1901 Spinnaker Dr <br> Ventura, CA 93001, USA</div>
-        <div class="col-md-4">kayaking</div>
-        <div class="col-md-2">few hours</div>
-        <div class="col-md-2"></div>
-      </div>
-
-      <br>
-
-      <div class="row destination">
-        <div class="col-md-1 rowNumb">3.</div>
-        <div class="col-md-3">Yosemite National Park <br> Yosemite Park Way <br> CA 95389, USA</div>
-        <div class="col-md-4">Backpacking</div>
-        <div class="col-md-2">Three days and two nights</div>
-        <div class="col-md-2"></div>
-      </div>
-
-      <br>
-
-      <div class="row destination">
-        <div class="col-md-1 rowNumb">4.</div>
-        <div class="col-md-3">San Francisco <br> 501 Twin Peaks Blvd <br> San Francisco, CA 94114</div>
-        <div class="col-md-4">Sightseeing</div>
-        <div class="col-md-2">One night</div>
-        <div class="col-md-2"></div>
-      </div>
-
-      <br>
-
-      <div class="row destination">
-        <div class="col-md-1 rowNumb">5.</div>
-        <div class="col-md-3">Great Basin National Park <br> Great Basin Visitors Center Rd <br> Baker, NV 89311, USA</div>
-        <div class="col-md-4">Camping</div>
-        <div class="col-md-2">One night</div>
-        <div class="col-md-2"></div>
-      </div>
-
+        <div class="row RoadTrip">
+          <div class="col-md-1 rowNumb"></div>
+          <div class="col-md-3">Destination</div>
+          <div class="col-md-4">Activity</div>
+          <div class="col-md-2">Duration</div>
+          <div class="col-md-2">Camp Site</div>
+        </div>
 
         <br>
+
+        <div class="row destination">
+          <div class="col-md-1 rowNumb">1.</div>
+          <div class="col-md-3">Joshua Tree Visitor Center <br>6554 Park Boulevard <br> Joshua Tree, CA 92256</div>
+          <div class="col-md-4">National Park Passport <br> Nature walk and climbing rocks</div>
+          <div class="col-md-2">few hours</div>
+          <div class="col-md-2"></div>
+        </div>
+
         <br>
+
+        <div class="row destination">
+          <div class="col-md-1 rowNumb">2.</div>
+          <div class="col-md-3">Channel Islands National Park <br> 1901 Spinnaker Dr <br> Ventura, CA 93001, USA</div>
+          <div class="col-md-4">kayaking</div>
+          <div class="col-md-2">few hours</div>
+          <div class="col-md-2"></div>
+        </div>
+
         <br>
-    <div id="FBcomments">
-      <div class="fb-comments" data-href="http://ktseringchem.github.io/DensityFunctionalTheory/TheRoadTrip.html" data-width="600px" data-numposts="20"></div>
-    </div>
-  </body>
+
+        <div class="row destination">
+          <div class="col-md-1 rowNumb">3.</div>
+          <div class="col-md-3">Yosemite National Park <br> Yosemite Park Way <br> CA 95389, USA</div>
+          <div class="col-md-4">Backpacking</div>
+          <div class="col-md-2">Three days and two nights</div>
+          <div class="col-md-2"></div>
+        </div>
+
+        <br>
+
+        <div class="row destination">
+          <div class="col-md-1 rowNumb">4.</div>
+          <div class="col-md-3">San Francisco <br> 501 Twin Peaks Blvd <br> San Francisco, CA 94114</div>
+          <div class="col-md-4">Sightseeing</div>
+          <div class="col-md-2">One night</div>
+          <div class="col-md-2"></div>
+        </div>
+
+        <br>
+
+        <div class="row destination">
+          <div class="col-md-1 rowNumb">5.</div>
+          <div class="col-md-3">Great Basin National Park <br> Great Basin Visitors Center Rd <br> Baker, NV 89311, USA</div>
+          <div class="col-md-4">Camping</div>
+          <div class="col-md-2">One night</div>
+          <div class="col-md-2"></div>
+        </div>
+
+          <br>
+          <br>
+          <br>
+
+        <div id="FBcomments">
+          <div class="fb-comments" data-href="http://ktseringchem.github.io/DensityFunctionalTheory/TheRoadTrip.html" data-width="600px" data-numposts="20"></div>
+        </div>
+        <div class="jumbotron" id="map"></div>
+      </div>
+
+    </body>
+
 </html>

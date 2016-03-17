@@ -1,3 +1,10 @@
+html, body {
+  background-image: url("adventurebodybackground.jpg");
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
 .Messageforall{
   font-size: 35px;
   background-color: yellow;
@@ -20,10 +27,21 @@
   font-family: times new roman;
 }
 .jumbotron {
+  position: relative;
+  background-image: #000 url('JaushaTree1.JPG') center center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
   height: 500px;
-  width: 100%;
+}
+.container .jumbotron{
+
 }
 .container .RoadTrip {
+  background-color: #E5E4E2;
   border-bottom-style: solid;
   border-color: black;
   text-align: left;
@@ -31,8 +49,6 @@
   font-size: 26px;
 }
 .container .destination {
-  border-bottom-style: solid;
-  border-color: #D8D8D8;
   text-align: left;
   font-family: 'Indie Flower', cursive;
   font-size: 22px;
@@ -40,10 +56,12 @@
 .container .rowNumb {
   font-family: sans-serif;
 }
-.container .page-header {
+body .page-header {
+  color: #C35817;
   height: 200px;
-  background-size: 1400px 200px;
-  font-size: 60px;
+  width: 100%;
+  background-size: 100% 200px;
+  font-size: 85px;
   font-family: 'Griffy', cursive;
   text-align: center;
 }
